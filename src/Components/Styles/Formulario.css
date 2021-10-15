@@ -1,0 +1,67 @@
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input, textarea{
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid var(--primario);
+
+    margin-bottom: 2rem;
+}
+
+textarea {
+    resize: none;
+}
+
+/* *********** */
+.modal{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+
+    margin: auto;
+
+    width: 100%;
+    min-height: 100vh;
+
+    display: none;
+    background-color: rgba(0,0,0,0.75);
+
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
+
+.modal.isOpen{
+    display: flex;
+}
+
+.modalContainer{
+    position: relative;
+    padding: 1rem;
+
+    max-width: 40%;
+}
+
+.modalClose{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    background-color: var(--primario);
+
+    border: none;
+    outline: none;
+    padding: 1rem;
+    color: var(--blanco);
+    cursor: pointer;
+
+    transition: 0.3s;
+}

@@ -1,0 +1,305 @@
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.contenidoSinPadding{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.sectionContainer{
+    background-color: var(--blanco);
+    color: var(--primario);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+}
+
+.sectionTitulo{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--primario);
+}
+
+.sectionTituloBlanco{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--blanco);
+}
+
+.sectionTexto{
+    padding: 0 4rem;
+}
+
+/**/
+
+.sAsTarjetas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.sAsGridDobleColumn{
+    display: grid;
+    grid-template-columns: repeat(2,260px);
+    grid-auto-flow: dense;
+}
+
+.sAsGridDobleRow{
+    display: grid;
+    grid-template-rows: repeat(auto-fit,minmax(200px,1fr));
+    grid-auto-flow: dense;
+}
+
+.sAsGridDobleColumn .imgGrid{
+    background-image: url("../../images/fondo-nosotros.jpg");
+    background-size: "contain";
+    padding-left: "1rem";
+    padding-right: "1rem";
+}
+
+.gridCuadroDoble{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem;
+}
+
+.flexCuadroImg img{
+    width: 100%;
+    height: 100%;
+}
+
+.cuadroTitulo{
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/***********/
+
+.focusContainer{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+}
+
+/* los 3 sgtes no tienen uso*/
+.slideBoton{
+    top: 50%;
+    outline: none;
+    border:none;
+    background: inherit;
+}
+.slideBoton img{
+    width: 50px;
+    cursor: pointer;
+}
+.slideBoton img:hover{
+    transform: scale(1.05);
+}
+
+.plusBoton{
+    outline: none;
+    border:none;
+    background: var(--terciario);
+    width: 2rem;
+    height: 2rem;
+    transition: 0.2s;
+}
+
+.plusBoton:hover{
+    background: var(--primario);
+}
+
+.slideContainer{
+    /* border: 2px solid blue; */
+    /* background-color: red; */
+    background-color: var(--gris);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0rem 2rem;
+}
+
+.slide{
+    margin: 0 2rem;
+    padding: 1rem;
+    background-color: var(--blanco);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.slide:hover{
+    transform: scale(1.05);
+}
+
+.slideDescripcion{
+    padding: 1rem;
+}
+
+.slideItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliteItemTitulo{
+    font-weight: bold;
+}
+
+.slideDescripcion img{
+    width: 1rem;
+    margin: 0.5rem;
+}
+
+/* ******** */ 
+
+.sectionParrafo{
+    width: 400px;
+    padding: 1rem;
+    background-color: var(--terciario);
+    margin: 1rem 2rem;
+    color: var(--blanco);
+}
+
+/* ************ */
+
+/* ********** */
+.sectionContainerGrid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr );
+}
+
+.sectionContainerGridTriple{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.containerClipPath img{
+    clip-path: polygon(11% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* ********** */ 
+.imgCompleto{
+    width:100%;
+    height:100%;
+}
+
+.separacion{
+    margin: 3rem 0;
+}
+
+.blur{
+    filter:blur(1px);
+    transition: 0.2s;
+}
+
+.blurFuerte{
+    filter:blur(12px);
+}
+
+
+.blur:hover{
+    filter: blur(0px);
+}
+
+.paddingLateral4{
+    padding: 0 4rem;
+}
+
+.paddingLateral8{
+    padding: 0 8rem;
+}
+
+/******/
+.valoresBotones{
+    margin-left: 2rem;
+}
+
+.valoresBotones button{
+    padding: 0.5rem;
+    border-radius: 50%;
+    margin:1rem;
+    border: 2px solid var(--naranja);
+}
+
+.valoresContenido{
+    background: radial-gradient(ellipse at center, #FFFFFF 0%, #FFFFFF 0%, #E58200 100%);
+}
+
+/******/
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,200px);
+    grid-auto-flow: dense;
+
+    align-items: center;
+    padding: 0 2rem;
+
+}
+
+.galeria img{
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.galeria img:hover{
+    filter: blur(2px);
+}
+
+.doble{
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.galeriaItem{
+    position: relative;
+    width:100%;
+    height:100%;
+}
+
+.galeriaItem p{
+    position: absolute;
+    top:50%;
+    margin: auto;
+
+    background-color: var(--blanco);
+    opacity: 0.8;
+    width: 100%;
+    padding: 0.5rem 0;
+    text-align: center;
+
+    display: none;
+    transition: 0.5s ease;
+}
+
+.galeriaItem:hover >p{
+    transition: 0.5 s;
+    display: block;
+}

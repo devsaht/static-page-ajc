@@ -1,0 +1,53 @@
+
+nav{
+    /* position:absolute; */
+    background-color: var(--primario);
+
+    left: 2rem;
+    top: -1rem;
+    /* min-width: 240px;*/
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tarjetaImagen{
+    /* background-color: green; */
+
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 4rem;
+
+    border-radius: 1rem;
+    transition: 0.2s ease-in;
+
+    cursor: pointer;
+
+    position: relative;
+}
+
+.tarjetaImagen:hover{
+    transform: scale(1.05);
+}
+
+.tarjetaImagen:hover > .hidden{
+    display: block;
+}
+
+.hidden{
+    position: absolute;
+    display: none;
+    top:50px;
+    /* bottom:0; */
+    right:60px;
+    /* left:0; */
+    margin:0 auto;
+
+    text-align: center;
+}

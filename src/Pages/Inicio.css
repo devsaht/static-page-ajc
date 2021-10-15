@@ -1,0 +1,27 @@
+
+/* sAsTarjetas */
+.sAsTarjetas .servicio{
+    margin: 0 2rem;
+    padding: 0.5rem 2rem;
+
+    width: 160px;
+    box-shadow: 6px 4px 8px var(--primario);
+}
+
+.servicio .logoPlus{
+    margin: 1rem 1rem 0.5rem 1rem;
+    width: 20px;
+    background-color: var(--terciario);
+
+    transition: 0.3s;
+}
+
+.servicio .logoPlus:hover{
+    background-color: var(--primario);
+}
+
+/* ************* */
+
+img{
+    width: 80px;
+}
